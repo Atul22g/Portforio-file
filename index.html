@@ -15,16 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&family=Kanit:wght@800&display=swap"
       rel="stylesheet"
     />
-
     <!-- Bootstrap Icon-->
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
     />
-
     <!-- Animate CSS -->
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -32,22 +28,30 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- SplideJs Styles -->
-
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/css/splide.min.css" /> -->
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/css/splide.min.css"
+    />
     <!-- App Styles -->
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
-  <body>
+  <body onload="loading()">
+    <!-- loading -->
+    <div id="loading">
+      <div class="center-div">
+        <div class="outer-ring"></div>
+        <div class="middle-ring"></div>
+        <div class="inner-ring"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    <!-- website -->
     <header class="header">
       <div class="animate__animated animate__slideInDown">
         <div class="container">
           <h1 class="header__logo">
-            <a href="/">Atul</a>
+            <a href="/">Atul22g</a>
           </h1>
           <nav class="navigation">
             <ul>
@@ -158,6 +162,25 @@
               <img src="assets/portfolio-02.png" alt="Portfolio Items" />
             </div>
             <div class="portfolio__info">
+              <h3 class="portfolio__title">Clock</h3>
+              <p class="portfolio__content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Architecto dignissimos pariatur dolor vitae assumenda, porro
+                quaerat corporis quos placeat a alias molestiae, totam, dolore
+                cum perspiciatis. Voluptate dolorem doloremque nobis.
+              </p>
+              <a
+                class="portfolio__link"
+                href="https://github.com/Atul22g/Clock"
+                >See Work <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/portfolio-03.png" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
               <h3 class="portfolio__title">Netflix Clone</h3>
               <p class="portfolio__content">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -174,26 +197,7 @@
           </div>
           <div class="portfolio__box">
             <div class="portfolio__img">
-              <img src="assets/portfolio-03.png" alt="Portfolio Items" />
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__title">Project 1</h3>
-              <p class="portfolio__content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Architecto dignissimos pariatur dolor vitae assumenda, porro
-                quaerat corporis quos placeat a alias molestiae, totam, dolore
-                cum perspiciatis. Voluptate dolorem doloremque nobis.
-              </p>
-              <a
-                class="portfolio__link"
-                href="https://github.com/Atul22g/Project-1"
-                >See Work <i class="bi bi-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-          <div class="portfolio__box">
-            <div class="portfolio__img">
-              <a href="https://github.com/Atul22g/Clock"
+              <a class="hover" href="https://github.com/Atul22g/YouTube-clone"
                 ><img src="assets/portfolio-04.png" alt="Portfolio Items"
               /></a>
             </div>
@@ -222,9 +226,9 @@
               <p class="section__subtitle">Few things about me</p>
             </div>
             <p class="about__bio">
-              Hey myself Atul Goyal. I am a Web Developer and a Programmer
-              too. More specialised in Fontend development and mostly used
-              language is JavaScript.
+              Hey myself Atul Goyal. I am a Web Developer and a Programmer too.
+              More specialised in Fontend development and mostly used language
+              is JavaScript.
             </p>
             <h4 class="about__skillsTitle">Skills</h4>
             <ul class="about__skillsList">

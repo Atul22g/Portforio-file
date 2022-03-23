@@ -36,3 +36,9 @@ navButton.addEventListener('click', () => {
 ScrollReveal().reveal('.about', { delay: 300 });
 ScrollReveal().reveal('.testimonials', { delay: 300 });
 ScrollReveal().reveal('.contact', { delay: 300 });
+
+// loading
+var preloader = document.getElementById("loading");
+function loading() {
+  preloader.style.display = "none";
+}
