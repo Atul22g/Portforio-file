@@ -146,7 +146,14 @@ img {
   line-height: 1;
   font-family: var(--font-special);
   font-weight: var(--font-bold);
-  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -285,10 +292,13 @@ img {
   background-color: var(--color-accent);
   transition: all 0.4s linear;
 }
-.portfolio__box:nth-child(1) .portfolio__img:hover,
-.portfolio__box:nth-child(4) .portfolio__img:hover {
-  width: 45%;
-  background-color: var(--color-accent);
+
+@media screen and (min-width: 901px) {
+  .portfolio__box:nth-child(1) .portfolio__img:hover,
+  .portfolio__box:nth-child(4) .portfolio__img:hover {
+    width: 45%;
+    background-color: var(--color-accent);
+  }
 }
 
 .portfolio__box:nth-child(1) .portfolio__info,
@@ -798,11 +808,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #00796b;
   z-index: 999;
 }
@@ -813,11 +823,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #loading .center-div .outer-ring {
@@ -830,7 +840,7 @@ img {
   border-radius: 50%;
   position: absolute;
   -webkit-animation: rototering 2s linear infinite;
-          animation: rototering 2s linear infinite;
+  animation: rototering 2s linear infinite;
 }
 
 #loading .center-div .middle-ring {
@@ -855,7 +865,7 @@ img {
   border-radius: 50%;
   position: absolute;
   -webkit-animation: rototering 2s linear infinite;
-          animation: rototering 2s linear infinite;
+  animation: rototering 2s linear infinite;
 }
 
 #loading .center-div .dot {
@@ -865,27 +875,27 @@ img {
   background-color: #b2dfdb;
   position: absolute;
   -webkit-animation: rototering 2s linear infinite;
-          animation: rototering 2s linear infinite;
+  animation: rototering 2s linear infinite;
 }
 
 @-webkit-keyframes rototering {
   0% {
     -webkit-transform: rotate(0deg) scale(0.3);
-            transform: rotate(0deg) scale(0.3);
+    transform: rotate(0deg) scale(0.3);
   }
   100% {
     -webkit-transform: rotate(360deg) scale(1.2);
-            transform: rotate(360deg) scale(1.2);
+    transform: rotate(360deg) scale(1.2);
   }
 }
 
 @keyframes rototering {
   0% {
     -webkit-transform: rotate(0deg) scale(0.3);
-            transform: rotate(0deg) scale(0.3);
+    transform: rotate(0deg) scale(0.3);
   }
   100% {
     -webkit-transform: rotate(360deg) scale(1.2);
-            transform: rotate(360deg) scale(1.2);
+    transform: rotate(360deg) scale(1.2);
   }
 }
